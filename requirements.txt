@@ -1,0 +1,6 @@
+SQLAlchemy
+CherryPy
+alembic
+mysqlclient
+Routes
+redis
