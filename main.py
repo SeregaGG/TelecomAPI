@@ -52,7 +52,6 @@ class WebService:
     @cherrypy.tools.json_in()
     @check_auth
     def update_equipment(self, eq_id):
-        cherrypy.response.status_code = 200
         try:
             with DBContext() as db:
                 equipment: Equipment = Equipment(id=int(eq_id)).get(db)
